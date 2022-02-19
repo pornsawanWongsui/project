@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div style="border: 1px groove; background-color: #EEEBEB;"><br>
+    <b><h2 style="color: #157347" align="center">ประวัติการศึกษา</h2></b><br>
+            <div class="container-fluid" >
+                <div class="row">
+                        <div class="col-3">
+                            <div class="card" style="width:400px" align="center">
+                                <img class="card-img-top" src="{% static 'images/kvc.jpg' %}" alt="Card image">
+                                      <div class="card-body">
+                                        <h4 class="card-title">วิทยาลัยอาชีวศึกษาขอนแก่น</h4>
+                                        <a href="http://old.kvc.ac.th/" target="_blank" class="btn btn-primary">Web site</a>
+                                      </div>
+                            </div>
+                        </div>
+                        <div class=" col col-4">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" >
+                                    <div class="carousel-item active">
+                                        <img src="{% static 'images/Edu (1).jpg' %}" class="d-block w-100" alt="daimond2">
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <img src="{% static 'images/Edu (2).jpg' %}" class="d-block w-100" alt="daimond1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{% static 'images/Edu (3).jpg' %}" class="d-block w-100" alt="daimond3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                           <table class="table table-success">
+                                <thead>
+                                      <tr>
+                                        <th>ระดับชั้น</th>
+                                        <th>สถานศึกษา</th>
+                                        <th>สาขาวิชา</th>
+                                        <th>ปีการศึกษา</th>
+                                        <th>เกรดเฉลี่ย</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                      <tr>
+                                        <td>ปวส.1</td>
+                                        <td>วิทยาลัยอาชีวศึกษาขอนแก่น</td>
+                                        <td>คอมพิวเตอร์ธุรกิจ</td>
+                                        <td>1/2562</td>
+                                        <td>3.77</td>
+                                      </tr>
+                                      <tr>
+                                        <td></td>
+                                        <td>วิทยาลัยอาชีวศึกษาขอนแก่น</td>
+                                        <td>คอมพิวเตอร์ธุรกิจ</td>
+                                        <td>2/2562</td>
+                                        <td>3.80</td>
+                                      </tr>
+                                      <tr>
+                                        <td>ปวส.2</td>
+                                        <td>วิทยาลัยอาชีวศึกษาขอนแก่น</td>
+                                        <td>คอมพิวเตอร์ธุรกิจ</td>
+                                        <td>1/2563</td>
+                                        <td>3.81</td>
+                                      </tr>
+                                      <tr>
+                                        <td></td>
+                                        <td>วิทยาลัยอาชีวศึกษาขอนแก่น</td>
+                                        <td>คอมพิวเตอร์ธุรกิจ</td>
+                                        <td>2/2563</td>
+                                        <td>3.70</td>
+                                      </tr>
+                                </tbody>
+                          </table>
+                        </div>
+                </div><br>
+                <div class="container-fluid" >
+                <div class="row">
+                        <div class="col-3">
+                            <div class="card" style="width:400px" align="center">
+                                <center><img class="card-img-top" src="{% static 'images/RMUTI_KORAT.png' %}" alt="Card image" style="width: 200px; height:350px" ></center>
+                                      <div class="card-body">
+                                        <h4 class="card-title">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น</h4>
+                                        <a href="https://www.kkc.rmuti.ac.th/2017/" target="_blank" class="btn btn-primary">Web site</a>
+                                      </div>
+                            </div>
+                        </div>
+                        <div class=" col col-4">
+                            <img src="{% static 'images/bisR1.jpg' %}" class="d-block w-100" alt="daimond1">
+                        </div>
+                        <div class="col-5">
+                           <table class="table table-success">
+                                <thead>
+                                      <tr>
+                                        <th>ระดับชั้น</th>
+                                        <th>สถานศึกษา</th>
+                                        <th>สาขาวิชา</th>
+                                        <th>ปีการศึกษา</th>
+                                        <th>เกรดเฉลี่ย</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ปริญญาตรีปีที่ 3</td>
+                                        <td>มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น</td>
+                                        <td>เทคโนโลยีธุรกิจดิจิทัล</td>
+                                        <td>1/2564</td>
+                                        <td>4.00</td>
+                                      </tr>
+                                </tbody>
+                          </table>
+                        </div>
+                </div><br>
+            </div>
+    </div>
+
+</div>
+{% endblock %}
