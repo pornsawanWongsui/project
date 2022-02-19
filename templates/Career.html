@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div style="border: 1px groove; background-color: #EEEBEB;"  >
+        <div class="jumbotron" ><br>
+            <b><h2 style="color: #157347" align="center">ข้อมูลอาชีพที่ใฝ่ฝันในอนาคต</h2></b>
+        </div><br>
+        <div class="container">
+            <div class="container-fluid" align="center">
+
+                <img src="{% static 'images/crypto.jpg' %}" class="rounded" alt="Cinque Terre"
+                     style="width:500px; height: 300px;">
+            </div>
+                <br>
+                <p><h5><b>ข้อมูลที่เกี่ยวข้องอาชีพนักเทรดหุ้น </b></h5><br>&emsp;&emsp;&emsp;&emsp;&emsp;นักเล่นหุ้น เป็นอาชีพที่กำลังเป็นที่นิยมมากในกลุ่มเด็กรุ่นใหม่
+                เพราะเด็กรุ่นใหม่มีนิสัยชื่นชอบการทำงานที่เป็นอิสระ สามารถศึกษาข้อมูลและเรียนรู้ด้วยตัวเองได้
+                อีกทั้งสิ่งที่ทำให้เด็กรุ่นใหม่ต่างเทคะแนนให้กับอาชีพนักเล่นหุ้น ก็คือทุกคนต่างคิดกันเป็นแนวทางเดียวกันว่า
+                อาชีพนี้มีอิสระ แค่ศึกษาข้อมูล
+                ลงทุนแล้วก็ปล่อยให้เงินทำงานของมันเอง ส่วนตัวเองก็ไปใช้ชีวิตสโลว์ไลฟ์ ขอบอกเลยว่า ใครที่กำลังคิดแบบนี้
+                เป็นความคิดที่ผิดอย่างใหญ่หลวงเลยละ
+                คนที่ผันตัวเองมาทำงานเป็นนักเล่นหุ้นเต็มตัวทุกคนนั้น ต่างก็ตื่นเช้าขึ้นทำงานไม่ต่างจากคนทำงานอาชีพอื่น ๆ
+                เพราะนักเล่นหุ้นจะต้องศึกษาข่าวสาร เก็บข้อมูล และติดตามหุ้นอยู่ตลอดเวลา ดังนั้นต้องมีความพร้อมอยู่เสมอ
+                เวลาทำงานของนักเล่นหุ้นจริง ๆ จะเป็นช่วงเวลาที่ตลาดหุ้นเปิดและปิดในทุก ๆ วัน ซึ่งจะเปิดช่วงเช้า ตั้งแต่ 9.55 – 10.00 น. จนถึง 12.30 น.
+                และจะเปิดอีกที่ช่วงบ่ายจนถึงเย็น ตั้งแต่ 14.25 – 14.30 จนถึง 16.35 – 16.40 น.</p>
+        </div>
+        <div class="container">
+            <button type="button" class="collapsible"><b> คุณสมบัติของนักลงทุน</b></button>
+            <div class="content"><br>
+                <p><h5 style="color: #6f42c1">คุณสมบัติ 8 ประการสู่ความสำเร็จ</h5>
+                <p>
+                   1 มีความรอบรู้ (Breadth)<br>
+                    2 ช่างสังเกต (Observation)<br>
+                    3 ไม่มีอคติ (Objectivity)<br>
+                    4 รักษาวินัย (Discipline) <br>
+                    5 มีความลึก (Depth)<br>
+                    6 มีความคิดสร้างสรรค์ (Creativity)<br>
+                    7 มีความรักในสิ่งที่ทำ (Passion)<br>
+                    8 มีความยืดหยุ่น (Flexibility) <br>
+                </p>
+            </div>
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+        </div><br>
+    </div>
+{% endblock %}
